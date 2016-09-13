@@ -35,5 +35,9 @@ module.exports = {
     'netguru-ember/no-empty-attrs': 2,
     'netguru-ember/closure-actions': 1,
     'netguru-ember/routes-segments-snake-case': 2,
+  },
+  env: {
+    browser: true,
+    jquery: true
   }
 }
