@@ -29,7 +29,7 @@ This command will basically produce and call something like this:
 npm install --save-dev eslint-config-netguru-ember eslint-plugin-netguru-ember@1.x eslint-config-airbnb-base@^7.1.0 eslint-plugin-import@^1.15.0
 ```
 
-##### 3. Change your `.eslintrc`, so it looks like this:
+##### 2. Change your `.eslintrc`, so it looks like this:
 
   ```shell
     extends: netguru-ember
