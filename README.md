@@ -13,17 +13,21 @@ You need to have `ember-cli-eslint` installed in your app. [More info here](http
 
 ## Usage
 
-##### 1. Install `eslint-config-airbnb-base` and it's dependencies. [Read more](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
 
-  ```shell
-    npm install --save-dev eslint-config-airbnb-base eslint-plugin-import
-  ```
+##### 1. Install all dependencies by simply pasting code below in your terminal
 
-##### 2. Install our config and plugin
+```shell
+(
+  export PKG=eslint-config-netguru-ember;
+  npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
+)
+```
 
-  ```shell
-    npm install --save-dev eslint-config-netguru-ember eslint-plugin-netguru-ember
-  ```
+This command will basically produce and call something like this:
+
+```
+npm install --save-dev eslint-config-netguru-ember eslint-plugin-netguru-ember@1.x eslint-config-airbnb-base@^7.1.0 eslint-plugin-import@^1.15.0
+```
 
 ##### 3. Change your `.eslintrc`, so it looks like this:
 
@@ -34,7 +38,7 @@ You need to have `ember-cli-eslint` installed in your app. [More info here](http
 You can find more informations about rules we provide [here](https://github.com/netguru/eslint-plugin-netguru-ember#rules).
 
 All rules and settings from `index.js` can be overriden in your `.eslintrc`.
-So if you for example want to disable the rule `netguru-ember/local-modules` your `.eslintrc` 
+So if you for example want to disable the rule `netguru-ember/local-modules` your `.eslintrc`
 should look like this:
 
   ```shell
