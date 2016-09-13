@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-netguru-ember",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Eslint config for Netguru Ember Style Guide",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/netguru/eslint-config-netguru-ember#readme",
   "peerDependencies": {
     "eslint-plugin-netguru-ember": "1.x",
-    "eslint-config-airbnb-base": "^5.3.0",
+    "eslint-config-airbnb-base": "^5.0.3",
     "eslint-plugin-import": "^1.14.0"
   }
 }
