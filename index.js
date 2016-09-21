@@ -23,8 +23,8 @@ module.exports = {
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0,
     'generator-star-spacing': [2, "after"],
-    'netguru-ember/local-modules': 1,
-    'netguru-ember/no-observers': 1,
+    'netguru-ember/local-modules': 2,
+    'netguru-ember/no-observers': 2,
     'netguru-ember/no-side-effects': 2,
     'netguru-ember/jquery-ember-run': 2,
     'netguru-ember/named-functions-in-promises': 2,
@@ -35,6 +35,7 @@ module.exports = {
     'netguru-ember/no-empty-attrs': 2,
     'netguru-ember/closure-actions': 1,
     'netguru-ember/routes-segments-snake-case': 2,
+    'netguru-ember/no-function-prototype-extensions': 2,
   },
   env: {
     browser: true,
