@@ -36,6 +36,7 @@ module.exports = {
     'netguru-ember/closure-actions': 1,
     'netguru-ember/routes-segments-snake-case': 2,
     'netguru-ember/no-function-prototype-extensions': 2,
+    'netguru-ember/no-on-calls-in-components': 2,
   },
   env: {
     browser: true,
