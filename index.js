@@ -37,6 +37,8 @@ module.exports = {
     'netguru-ember/routes-segments-snake-case': 2,
     'netguru-ember/no-function-prototype-extensions': 2,
     'netguru-ember/no-on-calls-in-components': 2,
+    'netguru-ember/use-ember-get-and-set': 1,
+    'netguru-ember/avoid-leaking-state-in-components': 2,
   },
   env: {
     browser: true,
